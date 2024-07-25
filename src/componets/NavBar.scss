@@ -1,0 +1,44 @@
+.NavBar_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 16px;
+
+  @media (min-width: 768px) {
+    gap: 70px;
+  }
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // width: 100%;
+  padding: 5px 20px 0 20px;
+
+  @media (min-width: 768px) {
+    padding: 5px 48px 0 48px;
+  }
+}
+
+.Navbar_img {
+  height: 47px;
+  width: 145px;
+
+  @media (min-width: 768px) {
+    height: 68px;
+    width: 211px;
+  }
+}
+
+.Navbar_link {
+  font-size: 12px;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}

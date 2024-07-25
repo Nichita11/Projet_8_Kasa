@@ -1,0 +1,47 @@
+.NavBar_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  .NavBar_text {
+    gap: 70px;
+  }
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px 0 20px;
+}
+@media (min-width: 768px) {
+  .NavBar {
+    padding: 5px 48px 0 48px;
+  }
+}
+
+.Navbar_img {
+  height: 47px;
+  width: 145px;
+}
+@media (min-width: 768px) {
+  .Navbar_img {
+    height: 68px;
+    width: 211px;
+  }
+}
+
+.Navbar_link {
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .Navbar_link {
+    font-size: 24px;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}/*# sourceMappingURL=NavBar.css.map */
