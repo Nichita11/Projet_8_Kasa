@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.scss";
 import Home from "./Home";
 import NavBar from "./componets/NavBar";
+
 import Footer from "./componets/Footer";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
+  // {
+  //   path: "/about",
+  //   element
+  // }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

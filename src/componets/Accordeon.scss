@@ -1,3 +1,13 @@
+.accordeon {
+  display: flex;
+  flex-direction: column;
+  width: 582px;
+}
+
+.accordeon_fluid {
+  width: 100%;
+}
+
 .accordeon_btn {
   display: flex;
   background-color: #ff6060;
@@ -5,23 +15,58 @@
   align-items: center;
   border-radius: 10px;
   height: 52px;
-  width: 582px;
+  width: 100%;
   color: white;
+  padding: 0 20px 0 12px;
 }
 
 .arrow {
-  padding-right: 20px;
+  // padding-right: 20px;
+  transition: all 240ms ease-in-out;
+  transform-origin:center ;
+  
+}
+
+.arrow_open{
+  transform: rotate(180deg);
 }
 
 .accordeon_text {
-  padding-left: 12px;
+  // padding-left: 12px;
   font-size: 18px;
   font-weight: 700;
 }
 
 .accordeon_fall {
-  height: 279px;
-  width: 582px;
+  display: grid;
+  width: calc(100% + 32px);
   background-color: rgb(240, 240, 240);
   border-radius: 10px 10px 5px 5px;
+  grid-template-rows: 0fr;
+  transition: all 240ms ease-in-out;
+  overflow: hidden;
+}
+
+.accordeon_fall_open {
+  grid-template-rows: 1fr;
+}
+
+.accordeon_fall_container {
+  display: flex;
+  height: 0;
+  padding: 0;
+  flex-direction: column;
+  gap: 8px;
+  visibility: hidden;
+  transition: all 240ms ease-in-out;
+}
+
+.accordeon_fall_container_open {
+  visibility: visible;
+  padding: 28px 0 28px 0;
+  height: fit-content;
+}
+
+.accordeon_paragrath {
+  margin: 0 24px 0 24px;
 }
