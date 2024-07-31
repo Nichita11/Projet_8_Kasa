@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Accordeon.scss";
-import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
+import {IconChevronUp } from "@tabler/icons-react";
 
 export default function Accordeon({ paragraths, title, fluid = false }) {
   const [open, setOpen] = useState(false);

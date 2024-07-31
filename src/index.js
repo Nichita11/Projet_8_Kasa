@@ -7,23 +7,24 @@ import NavBar from "./componets/NavBar";
 import Footer from "./componets/Footer";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import About from "./componets/About";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
   },
-  // {
-  //   path: "/about",
-  //   element
-  // }
+  {
+    path: "/about",
+    element: <About />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <NavBar />
     <RouterProvider router={router} />
-    <Footer /> 
+    <Footer />
   </React.StrictMode>
 );
 
