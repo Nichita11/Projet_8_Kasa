@@ -1,5 +1,5 @@
 .Banner_About {
-    border-radius: 9px;
+  border-radius: 9px;
   height: 111px;
   position: relative;
   overflow: hidden;
@@ -7,13 +7,13 @@
   align-items: center;
   justify-content: center;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   box-shadow: none;
   padding: 0 16px 0 16px;
-    @media (min-width:768px) {
+  @media (min-width: 768px) {
     height: 223px;
     border-radius: 25px;
-    
+    margin-top: 40px;
   }
 }
 
@@ -25,18 +25,58 @@
 }
 
 .container_about {
-  padding: 5px 20px 0 20px;
+  padding: 5px 19px 0 19px;
 
   @media (min-width: 768px) {
     padding: 5px 48px 0 48px;
   }
 }
 
-.accordeon_container{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+.accordeon_container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0 16px 0 16px;
+  transform: translateX(-16px);
+  margin-bottom: 32px;
+
+  @media (min-width: 768px) {
     padding: 0 120px 0 120px;
-    transform: translateX(-16px);
     margin-bottom: 48px;
+  }
+}
+
+.Navbar_img {
+  height: 46px;
+  width: 145px;
+
+  @media (min-width: 768px) {
+    height: 68px;
+    width: 210px;
+  }
+}
+
+.Navbar_link {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  line-height: 17px;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px 0 20px;
+  margin-top: 20px;
 }

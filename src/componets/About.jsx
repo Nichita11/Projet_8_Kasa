@@ -5,19 +5,27 @@ export default function About() {
   const accordionsData = [
     {
       title: "Fiabilité",
-      paragraths: [""],
+      paragraths: [
+        "Les annonces postées sur Kasa garantissent une fiabilité totale. Nes photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos éctipes.",
+      ],
     },
     {
       title: "Respect",
-      paragraths: [""],
+      paragraths: [
+        "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme.",
+      ],
     },
     {
       title: "Service",
-      paragraths: [""],
+      paragraths: [
+        "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme.",
+      ],
     },
     {
       title: "Sécurité",
-      paragraths: [""],
+      paragraths: [
+        "La sécurite est la priorité de Kasa. Aussi bien pour nas hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte quau locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hotes.",
+      ],
     },
   ];
 

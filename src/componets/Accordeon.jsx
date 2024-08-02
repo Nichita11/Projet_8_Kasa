@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Accordeon.scss";
-import {IconChevronUp } from "@tabler/icons-react";
+import { IconChevronUp } from "@tabler/icons-react";
 
 export default function Accordeon({ paragraths, title, fluid = false }) {
   const [open, setOpen] = useState(false);
@@ -21,11 +21,13 @@ export default function Accordeon({ paragraths, title, fluid = false }) {
             open ? "accordeon_fall_container_open" : ""
           }`}
         >
-          {paragraths.map((el, key) => (
-            <p key={key} className="accordeon_paragrath">
-              {el}
-            </p>
-          ))}
+          <div>
+            {paragraths.map((el, key) => (
+              <p key={key} className="accordeon_paragrath">
+                {el}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </div>

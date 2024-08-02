@@ -13,21 +13,24 @@
   background-color: #ff6060;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 5px;
   height: 52px;
   width: 100%;
   color: white;
   padding: 0 20px 0 12px;
+
+  @media (min-width: 768px) {
+    border-radius: 10px;
+  }
 }
 
 .arrow {
   // padding-right: 20px;
   transition: all 240ms ease-in-out;
-  transform-origin:center ;
-  
+  transform-origin: center;
 }
 
-.arrow_open{
+.arrow_open {
   transform: rotate(180deg);
 }
 
@@ -41,10 +44,11 @@
   display: grid;
   width: calc(100% + 32px);
   background-color: rgb(240, 240, 240);
-  border-radius: 10px 10px 5px 5px;
+  border-radius: 0 0 5px 5px;
   grid-template-rows: 0fr;
   transition: all 240ms ease-in-out;
   overflow: hidden;
+  transform: translateY(-5px);
 }
 
 .accordeon_fall_open {

@@ -1,0 +1,111 @@
+.appartment_container {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  margin: 48px 20px 20px 48px;
+}
+
+.appartment_img {
+  height: 415px;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+.content_title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 10px 10px 0;
+}
+
+.appartement_title {
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+}
+
+.appartment_location {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 20px 10px 10px 0;
+}
+
+.tag {
+  padding: 0 40px 0 40px;
+  background: #ff6060;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordeons_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  width: calc(100% - 72px);
+  padding: 5px 20px 0 20px;
+
+  @media (min-width: 768px) {
+    padding: 5px 48px 0 48px;
+    width: calc(100% - 128px);
+    margin-bottom: 48px;
+  }
+}
+
+.star {
+  color: #ff6060;
+}
+
+.appartment_rating {
+  display: flex;
+  gap: 8px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 5px 20px 0 20px;
+
+  @media (min-width: 768px) {
+    padding: 5px 48px 0 48px;
+  }
+}
+
+.profile {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.profile_img {
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+}
+
+.profile_name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ff6060;
+}
+
+.flex_end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+}
