@@ -53,7 +53,7 @@ export default function Appartment() {
           </div>
         </div>
       </div>
-      <div className="accordeons_container">
+      <div className="accordeons_container ">
         <Accordeon
           paragraths={[appartment.description]}
           title={"Description"}
