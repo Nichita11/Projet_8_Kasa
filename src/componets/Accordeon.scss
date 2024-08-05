@@ -14,13 +14,15 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
-  height: 52px;
+  height: 30px;
   width: 100%;
   color: white;
   padding: 0 20px 0 12px;
+  z-index: 1;
 
   @media (min-width: 768px) {
     border-radius: 10px;
+    height: 52px;
   }
 }
 
@@ -28,6 +30,11 @@
   // padding-right: 20px;
   transition: all 240ms ease-in-out;
   transform-origin: center;
+
+  @media (max-width:768px) {
+    width:20px ;
+    height: 20px;
+  }
 }
 
 .arrow_open {
@@ -36,8 +43,12 @@
 
 .accordeon_text {
   // padding-left: 12px;
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 .accordeon_fall {
@@ -67,10 +78,20 @@
 
 .accordeon_fall_container_open {
   visibility: visible;
-  padding: 28px 0 28px 0;
+  padding: 12px 0 12px 0;
   height: fit-content;
+
+  @media (min-width: 768px) {
+    padding: 28px 0 28px 0;
+  }
 }
 
 .accordeon_paragrath {
-  margin: 0 24px 0 24px;
+  margin: 0 12px 0 12px;
+  font-size: 12px;
+
+  @media (min-width: 768px) {
+    margin: 0 24px 0 24px;
+    font-size: 18px;
+  }
 }

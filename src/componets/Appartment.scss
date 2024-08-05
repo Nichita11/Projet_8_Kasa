@@ -1,12 +1,73 @@
 .appartment_container {
-  margin: 48px 20px 20px 48px;
+  margin: 68px 20px 20px 20px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    margin: 68px 48px 20px 48px;
+  }
 }
 
 .appartment_img {
-  height: 415px;
+  height: 335px;
   width: 100%;
   object-fit: cover;
-  margin-top: 30px;
+  border-radius: 10px;
+
+  @media (min-width: 768px) {
+    border-radius: 25px;
+    height: 415px;
+  }
+}
+
+.button_left {
+  background: transparent;
+  border: none;
+  color: white;
+  position: absolute;
+  top: calc(50% + 14px);
+  left: 20px;
+  transform: translateY(-50%);
+
+  @media (max-width: 768px) {
+    left: -10px;
+    & > svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.button_right {
+  background: transparent;
+  border: none;
+  color: white;
+  position: absolute;
+  top: calc(50% + 14px);
+  right: 20px;
+  transform: translateY(-50%);
+
+  @media (max-width: 768px) {
+    right: -10px;
+    & > svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.img_index_idicator {
+  position: absolute;
+  bottom: 40px;
+  left: calc(50% - 20px);
+  transform: translateX(-50%);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .content_title {
@@ -90,22 +151,21 @@
   }
 }
 
-
 .star {
   color: #ff6060;
   height: 18px;
   width: 18px;
-   @media (min-width: 768px) {
+  @media (min-width: 768px) {
     height: 32px;
-   }
+  }
 }
 
 .appartment_rating {
   display: flex;
   gap: 8px;
-   @media (min-width: 768px) {
+  @media (min-width: 768px) {
     gap: 8px;
-   }
+  }
 }
 
 .content {
@@ -119,6 +179,7 @@
     padding: 5px 48px 0 48px;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
 }
 
