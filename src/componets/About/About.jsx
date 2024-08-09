@@ -1,6 +1,6 @@
 import "./About.scss";
-import Accordeon from "./Accordeon";
-import Layout from "./Layout";
+import Accordeon from "../Accordeon/Accordeon";
+import Layout from "../Layout";
 
 export default function About() {
   const accordionsData = [

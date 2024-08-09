@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./ErrorPage.scss";
-import Layout from "./Layout";
+import Layout from "../Layout";
 
 export default function ErrorPage() {
   return (

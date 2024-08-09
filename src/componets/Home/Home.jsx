@@ -1,9 +1,9 @@
 import "./Home.scss";
 import { Fragment, useEffect, useState } from "react";
-import Accordeon from "./Accordeon";
-import Card from "./Card";
-import appartmentJSON from "../appartement.json";
-import Layout from "./Layout";
+import Accordeon from "../Accordeon/Accordeon.jsx";
+import Card from "../Card/Card.jsx";
+import appartmentJSON from "../../appartement.json";
+import Layout from "../Layout";
 
 export default function Home() {
   return (
